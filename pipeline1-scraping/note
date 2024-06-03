@@ -1,0 +1,17 @@
+1. subreddit selection: https://docs.google.com/spreadsheets/d/1bfOt5vxLwRjfIpzZbIOWiLEwDUm597aPcZ0_DiPPQKA/edit?usp=drive_link
+    we search posts that are relevant to our goal, and collect their subreddits
+2. classify subreddits as "art", "tech", or "others", and scrape their submissions
+3. filtered these submission ids by matching keywords on submission title / descritpion
+4. use these submission ids to scrape all the comments (2 tiers)
+5. filter comments using keyword matching
+    art_pattern = r'\b(?:art|arts)\b|artist|music|paint|film|animation|graphic|sculpture|design'
+
+    ai_pattern = r'\b(?:ai)\b|generat|digital|algorithm|computation|machine'
+
+    if re.search(ai_pattern, text, flags=re.IGNORECASE) and re.search(art_pattern, text, flags=re.IGNORECASE):
+       return True
+    else:
+       return False
+6. preprocessing (put in pipeline 2)
+    only keep comments that are more than 15 and less than 256 words
+    mask url
