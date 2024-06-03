@@ -1,5 +1,9 @@
 1. read df_distilled_opinions.pkl in pipeline3
 2. drop unclear comments
 3. Calculate the Cohen’s Kappa or Krippendorff’s Alpha of annotations in pipeline 3
-4. read "hotCommentsFromUsers.csv" from google drive
-5.
+4. read "hotCommentsFromUsers.csv"
+5. link two databases using "redditor_id"
+6. answer these questions:
+    How do these opinions develop through time?
+    How do these opinions vary across different communities?
+    Not limited to these questions!
