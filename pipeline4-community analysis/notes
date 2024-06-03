@@ -3,7 +3,16 @@
 3. Calculate the Cohen’s Kappa or Krippendorff’s Alpha of annotations in pipeline 3
 4. read "hotCommentsFromUsers.csv"
 5. link two databases using "redditor_id"
-6. answer these questions:
+6. cluster users based on behaviours (frequency of subreddits the user post comments)
+    bag of word approach?
+    PCA before cluster?
+    assign each user a label
+7. visualize the trend of opinion across different user clusters
+    course-grained
+        based on "sentiment"
+    fine-grained
+        based on "opinion"
+7. answer these questions:
     How do these opinions develop through time?
     How do these opinions vary across different communities?
     Not limited to these questions!
