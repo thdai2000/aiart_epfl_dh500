@@ -2,7 +2,7 @@
     we search posts that are relevant to our goal, and collect their subreddits
 2. classify subreddits as "art", "tech", or "others", and scrape their submissions
 3. filtered these submission ids by matching keywords on submission title / descritpion
-4. use these submission ids to scrape all the comments (2 tiers)
+4. use these submission ids to scrape all the comments (3 tiers)
 5. filter comments using keyword matching
     art_pattern = r'\b(?:art|arts)\b|artist|music|paint|film|animation|graphic|sculpture|design'
 
